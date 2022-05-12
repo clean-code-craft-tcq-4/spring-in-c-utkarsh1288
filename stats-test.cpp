@@ -24,10 +24,9 @@ TEST_CASE("average is NaN for empty array") {
     float numberset[] = {-10.5, -18.9, -13.2, -14.5};
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     struct Stats computedStats = compute_statistics(numberset, setlength);
-    REQUIRE(computedStats.average == NAN);
-    REQUIRE(computedStats.max == NAN);
-    REQUIRE(computedStats.min == NAN);
-    REQUIRE(NAN_Detected == 1); 
+    REQUIRE(computedStats.average != REQUIRE(computedStats.average);
+    REQUIRE(computedStats.max != computedStats.max);
+    REQUIRE(computedStats.min != computedStats.min);
     
     //Design the REQUIRE statement here.
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
