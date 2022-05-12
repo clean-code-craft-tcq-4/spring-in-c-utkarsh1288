@@ -24,7 +24,7 @@ TEST_CASE("average is NaN for empty array") {
     float numberset[] = {-10.5, -18.9, -13.2, -14.5};
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     struct Stats computedStats = compute_statistics(numberset, setlength);
-    REQUIRE(computedStats.average != REQUIRE(computedStats.average);
+    REQUIRE(computedStats.average != computedStats.average);
     REQUIRE(computedStats.max != computedStats.max);
     REQUIRE(computedStats.min != computedStats.min);
     
