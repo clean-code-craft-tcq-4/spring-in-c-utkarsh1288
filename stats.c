@@ -5,7 +5,6 @@
 #endif
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
-int NAN_Detected =0;
 int Simultaneous_Alerts =0;
 int Empty_numberset_Detected =0;
 
