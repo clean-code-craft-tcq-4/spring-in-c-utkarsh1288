@@ -5,6 +5,8 @@
 #endif
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
+int NAN_Detected =0;
+int Simultaneous_Alerts =0;
 
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
