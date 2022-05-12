@@ -15,6 +15,8 @@ extern int ledAlertCallCount;
 
 extern int NAN_Detected;
 
+extern Empty_numberset_Detected;
+
 extern int Simultaneous_Alerts;
 
 typedef void (*alerter_funcptr)();
