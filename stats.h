@@ -13,9 +13,9 @@ extern int emailAlertCallCount;
 
 extern int ledAlertCallCount;
 
-int NAN_Detected =0;
+extern int NAN_Detected;
 
-int Simultaneous_Alerts =0;
+extern int Simultaneous_Alerts;
 
 typedef void (*alerter_funcptr)();
 
