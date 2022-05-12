@@ -13,7 +13,7 @@ extern int emailAlertCallCount;
 
 extern int ledAlertCallCount;
 
-extern Empty_numberset_Detected;
+extern int Empty_numberset_Detected;
 
 extern int Simultaneous_Alerts;
 
