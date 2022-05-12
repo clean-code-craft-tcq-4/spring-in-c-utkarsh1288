@@ -1,3 +1,4 @@
+#include "cstdio.h"
 #include "stats.h"
 #include <math.h>
 #ifdef NAN
