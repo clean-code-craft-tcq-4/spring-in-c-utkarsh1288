@@ -7,6 +7,7 @@ int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 int NAN_Detected =0;
 int Simultaneous_Alerts =0;
+int Empty_numberset_Detected =0;
 
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
@@ -19,8 +20,8 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     float min = 0, max =0;
     if((numberset == NULL)&&(setlength ==0))
     {
-		NAN_Detected  =1;
-	}
+		Empty_numberset_Detected  =1;
+    }
 	else
 	{
 	    for(i =0;i<setlength;i++)
@@ -44,7 +45,6 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 		s.min =min;
 		s.max = max;	
 	}	
-	
     return s;
 } 
 
