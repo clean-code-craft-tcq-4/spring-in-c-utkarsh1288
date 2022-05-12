@@ -1,4 +1,3 @@
-#include "cstdio.h"
 #include "stats.h"
 #include <math.h>
 #ifdef NAN
@@ -20,7 +19,6 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     //num = *numberset;
 	if((numberset == NULL)&&(setlength ==0))
     {
-		printf("The numberset contains NAN\n");
 		NAN_Detected  =1;
 	}
 	else
@@ -74,12 +72,10 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
 
 void emailAlerter()
 {
-   printf("Email Notification activated\n");
    emailAlertCallCount++;
 }
 
 void ledAlerter()
 {
-   printf("Led Notification activated\n");
    ledAlertCallCount++;
 }
