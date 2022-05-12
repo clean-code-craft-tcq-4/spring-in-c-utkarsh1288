@@ -45,7 +45,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 		s.min =min;
 		s.max = max;	
 	}
-    if((s.average != s.average) && (s.min != s.min) && (s.max != s.max))
+    if(isnan(s.average))
     {
 	 NAN_Detected =1;   
     }    
