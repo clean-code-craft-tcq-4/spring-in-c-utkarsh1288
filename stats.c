@@ -15,9 +15,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
     int i =0;
     float Total =0;
     float min = 0, max =0;
-     float num = 0;
-    //num = *numberset;
-	if((numberset == NULL)&&(setlength ==0))
+    if((numberset == NULL)&&(setlength ==0))
     {
 		NAN_Detected  =1;
 	}
