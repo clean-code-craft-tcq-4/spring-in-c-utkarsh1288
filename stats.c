@@ -20,7 +20,7 @@ struct Stats compute_statistics(const float* numberset, int setlength)
 	if((numberset == NULL)&&(setlength ==0))
     {
 		printf("The numberset contains NAN\n");
-		NAN_DETECTED =1;
+		NAN_Detected  =1;
 	}
 	else
 	{
@@ -63,6 +63,7 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
     {
         (*alerters[0])(); 
         (*alerters[1])(); 
+	Simultaneous_Alerts++;
     }
     else
     {
